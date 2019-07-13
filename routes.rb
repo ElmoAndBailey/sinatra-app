@@ -1,12 +1,11 @@
 get '/users' do
-  'Hello world!'
   @users = User.all
-  names = []
-  @users.each do |user|
-    names << user.salutation
-  end
-  "Here are all the users: #{names.join(' ')}"
+  erb :"users/index"
 end
-get "/users/:id" do 
 
+get "/users/:id" do 
+  id = params[:id]
+  @user = User.find(id)
+  erb :"users/show"
 end
+

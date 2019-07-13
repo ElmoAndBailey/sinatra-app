@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\models"
+    "\\db\\migrate",
+    "\\models",
+    "\\views",
+    "\\views\\users"
   ],
   "SelectedNode": "\\models\\user.rb",
   "PreviewInSolutionExplorer": false
